@@ -38,6 +38,7 @@ main{
             color: var(--Very-Dark-Magenta);
             margin-top: 15px;
             font-size: 18px;
+            opacity: 70%;
         }
     }
     .top_right{
@@ -90,6 +91,88 @@ main{
         p{
             margin-top: 25px;
             font-size: 17px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 38%, 77%;
+        padding: 100px 0;
+    }
+    main{
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top_left{
+            width: 550px;
+            text-align: start;
+            h1{
+                font-size: 60px;
+            }
+            p{
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+        .top_right{
+            width: 600px;
+            .div1, .div2, .div3{
+                display: flex;
+                align-items: center;
+                width: 500px;
+                padding: 15px 25px;
+                img{
+                    margin-top: 5px;
+                }
+            }
+            .div2{
+                align-self: center;
+            }
+            .div3{
+                align-self: flex-end;
+            }
+            h2{
+                margin-left: 25px;
+                font-size: 20px;
+            }
+        }
+        .avatars{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 275px;
+            .avatar_div1, .avatar_div2, .avatar_div3{
+                width: 390px;
+                padding: 40px;
+            }
+            .avatar_div1{
+                align-self: flex-start;
+            }
+            .avatar_div2{
+                align-self: center;
+            }
+            .avatar_div3{
+                align-self: flex-end;
+            }
+            .name{
+                div{
+                    h3{
+                        font-size: 18px;
+                    }
+                    h4{
+                        font-size: 18px;
+                    }
+                }
+            }
+            p{
+                font-size: 18px;
+            }
         }
     }
 }
